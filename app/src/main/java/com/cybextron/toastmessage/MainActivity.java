@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Button btn2 = (Button) findViewById(R.id.btn2);
         Button btn3 = (Button) findViewById(R.id.btn3);
         Button btn4 = (Button) findViewById(R.id.btn4);
-        Button btn5 = (Button) findViewById(R.id.btn5);
 
         //Creating the LayoutInflater instance
         LayoutInflater li = getLayoutInflater();
@@ -39,21 +38,20 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Show Long Duration Toast", Toast.LENGTH_LONG).show();
         });
 
+        // Set toast position or gravity
         btn3.setOnClickListener(view -> {
             Toast toast = Toast.makeText(getApplicationContext(), "Set Toast Position", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.BOTTOM | Gravity.LEFT, 10, 20);
             toast.show();
         });
 
+        // Set toast custom layout
         btn4.setOnClickListener(view -> {
             Toast toast = Toast.makeText(getApplicationContext(), "Set Toast Position", Toast.LENGTH_SHORT);
             toast.setView(layout);
             toast.show();
         });
 
-        btn5.setOnClickListener(view -> {
-
-        });
     }
     public void showToast (String msg){
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
