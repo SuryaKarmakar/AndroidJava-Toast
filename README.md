@@ -23,13 +23,13 @@ Toast toast =
 </ol>
 
 ```java
-    Toast toast = Toast.makeText(getApplicationContext(), "Simple Toast Message", Toast.LENGTH_SHORT);
+Toast toast = Toast.makeText(getApplicationContext(), "Simple Toast Message", Toast.LENGTH_SHORT);
 ```
 
 <li>And the last to display toast message in screen call the <b>show()</b> function</li>
 
 ```java
-    toast.show();
+toast.show();
 ```
 </ul>
 
@@ -116,7 +116,7 @@ btn4.setOnClickListener(view -> {
 ```
 </ol>
 
-<img src="customToast.png" width="400" height="300">
+<img src="customToast.png" width="400" height="200">
 
 
 
