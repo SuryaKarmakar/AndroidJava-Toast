@@ -58,7 +58,7 @@ toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
 ```
 ## Creating a Custom Toast View :
 <ol>
-<li>To create a custom toast view, you need to create a custom layout file in XML and pass the root View object to the setView(View) method.</li>
+<li>To create a custom toast view, you need to create a custom layout file in XML(custom_toast.xml) and pass the root View object to the <b>setView(View)</b> method.</li>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -88,7 +88,7 @@ toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-<li>And if you want to create a custom toast shape then you need to create a new shape XML also</li>
+<li>And if you want to create a custom toast shape then you need to create a new shape XML(custom_toast_shape.xml) also</li>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
