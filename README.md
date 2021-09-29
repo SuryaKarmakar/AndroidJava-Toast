@@ -11,7 +11,7 @@
 <li>First create a <b>Toast object</b></li>
 
 ```java
-Toast toast =
+Toast toast = Toast.makeText(getApplicationContext(), "Simple Toast Message", Toast.LENGTH_SHORT);
 ```
 
 <li> Then create a toast message, use the <b>makeText()</b> method which takes the following parameters:</li>
